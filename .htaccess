@@ -1,0 +1,6 @@
+ErrorDocument 404 /error404
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteRule ^a(.*) index.php?request=$1
+RewriteRule ^error404 index.php?request=error404
